@@ -8,6 +8,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/assets/styles.css">
+<script src="/assets/form.js" defer></script>
 </head>
 <body>
 <header class="site">
@@ -38,15 +39,18 @@
     <h2 style="margin-top:0;">Interested in working together?</h2>
     <p>Fill out some info and I will be in touch shortly. We can't wait to hear from you!</p>
 
-    <form class="form-grid" action="#" method="POST">
+    <form class="form-grid w3f-form" action="https://api.web3forms.com/submit" method="POST">
+      <input type="hidden" name="access_key" value="ce5b6eca-7dd7-4cbc-a7a3-a1f1ad766218">
+      <input type="hidden" name="subject" value="New message from santistrasser.com — About">
+      <input type="checkbox" name="botcheck" class="hp-field" tabindex="-1" autocomplete="off">
       <div class="form-row">
         <div>
           <label for="fname">First Name (required)</label>
-          <input id="fname" name="fname" required>
+          <input id="fname" name="First Name" required>
         </div>
         <div>
           <label for="lname">Last Name (required)</label>
-          <input id="lname" name="lname" required>
+          <input id="lname" name="Last Name" required>
         </div>
       </div>
       <div>
@@ -54,7 +58,7 @@
         <input id="email" name="email" type="email" required>
       </div>
       <div style="display:flex; align-items:center; gap:8px;">
-        <input id="signup" name="signup" type="checkbox" style="width:auto;">
+        <input id="signup" name="Sign up for news and updates" type="checkbox" style="width:auto;">
         <label for="signup" style="margin:0;">Sign up for news and updates</label>
       </div>
       <div>
@@ -62,6 +66,7 @@
         <textarea id="message" name="message" required></textarea>
       </div>
       <button class="submit" type="submit">Submit</button>
+      <p class="form-status" role="status"></p>
     </form>
   </div>
 </main>

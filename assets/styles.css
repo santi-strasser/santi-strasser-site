@@ -137,6 +137,13 @@ button.submit{
   font-weight:600; cursor:pointer; justify-self:start;
 }
 button.submit:hover{background:#a54f27;}
+button.submit:disabled{opacity:0.6; cursor:default;}
+
+.form-status{font-size:0.9rem; min-height:1.4em;}
+.form-status.ok{color:#3F7A4E;}
+.form-status.err{color:#B3432B;}
+
+.hp-field{position:absolute; left:-9999px; top:-9999px;}
 
 /* Footer */
 footer.site{
