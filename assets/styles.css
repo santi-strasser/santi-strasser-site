@@ -162,7 +162,7 @@ blockquote{
 ul.takeaways{list-style:none; margin:1.4rem 0;}
 ul.takeaways li{margin-bottom:1.2rem; padding-left:26px; position:relative;}
 ul.takeaways li::before{
-  content:"—"; position:absolute; left:0; color:var(--accent);
+  content:"–"; position:absolute; left:0; color:var(--accent);
 }
 ul.takeaways strong{color:var(--ink);}
 
