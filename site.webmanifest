@@ -1,0 +1,19 @@
+{
+  "name": "The Resilience Architect",
+  "short_name": "Santi Strasser",
+  "icons": [
+    {
+      "src": "/favicon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/favicon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#FAF6EF",
+  "background_color": "#FAF6EF",
+  "display": "browser"
+}

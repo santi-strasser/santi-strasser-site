@@ -3,7 +3,7 @@
   --paper:#F3EDE2;
   --ink:#262220;
   --ink-soft:#5C544C;
-  --accent:#BE5B2E;
+  --accent:#A94E24;
   --accent-soft:#E9C9A8;
   --border:rgba(38,34,32,0.12);
   --maxw:700px;
@@ -27,6 +27,14 @@ body{
 
 a{color:var(--accent); text-decoration:none;}
 a:hover{text-decoration:underline;}
+a:focus-visible, button:focus-visible{outline:2px solid var(--accent); outline-offset:3px;}
+
+.skip-link{
+  position:absolute; left:16px; top:-60px; z-index:100;
+  background:var(--ink); color:#fff; padding:10px 16px; border-radius:3px;
+  font-size:0.9rem;
+}
+.skip-link:focus{top:12px; text-decoration:none;}
 
 img{max-width:100%; display:block;}
 
@@ -43,6 +51,14 @@ h2{font-size:clamp(1.5rem,3.5vw,2rem); margin:2.2rem 0 0.9rem;}
 h3{font-size:1.2rem; margin:1.6rem 0 0.6rem;}
 
 p{margin-bottom:1.1rem;}
+
+main ul:not(.takeaways), main ol{margin:0 0 1.2rem 1.3rem; padding-left:0.4rem;}
+main ul:not(.takeaways) li, main ol li{margin-bottom:0.7rem;}
+
+figure.post-figure{margin:1.8rem 0;}
+figure.post-figure img{width:100%; height:auto; border:1px solid var(--border); border-radius:4px;}
+figure.post-figure.narrow img{max-width:420px; margin:0 auto;}
+figure.post-figure figcaption{font-size:0.85rem; color:var(--ink-soft); margin-top:8px; text-align:center;}
 
 /* Nav */
 header.site{
@@ -81,7 +97,7 @@ main{padding:64px 0 40px;}
   letter-spacing:0.04em; text-transform:uppercase; font-weight:600;
   margin-top:8px;
 }
-.btn:hover{background:#a54f27; text-decoration:none;}
+.btn:hover{background:#8F3F18; text-decoration:none;}
 
 /* Home hero */
 .hero{padding:70px 0 50px; text-align:center;}
@@ -136,7 +152,7 @@ button.submit{
   border-radius:2px; font-size:0.9rem; letter-spacing:0.04em; text-transform:uppercase;
   font-weight:600; cursor:pointer; justify-self:start;
 }
-button.submit:hover{background:#a54f27;}
+button.submit:hover{background:#8F3F18;}
 button.submit:disabled{opacity:0.6; cursor:default;}
 
 .form-status{font-size:0.9rem; min-height:1.4em;}
@@ -145,12 +161,26 @@ button.submit:disabled{opacity:0.6; cursor:default;}
 
 .hp-field{position:absolute; left:-9999px; top:-9999px;}
 
+/* Call-out cards (contact CTA, Substack subscribe) */
+.cta-card{
+  background:var(--paper); border:1px solid var(--border); border-radius:4px;
+  padding:26px 28px; margin:2rem 0;
+}
+.cta-card h2{margin:0 0 0.5rem; font-size:1.45rem;}
+.cta-card p{margin-bottom:1rem;}
+.cta-card .btn{margin-top:0;}
+.cta-card p:last-child{margin-bottom:0;}
+.contact-lines p{margin-bottom:0.4rem;}
+
 /* Footer */
 footer.site{
   border-top:1px solid var(--border); padding:36px 0; margin-top:40px;
   text-align:center; color:var(--ink-soft); font-size:0.85rem;
 }
-footer.site a{color:var(--ink-soft);}
+footer.site a{color:var(--ink-soft); text-decoration:underline;}
+footer.site a:hover{color:var(--accent);}
+footer.site p{margin-bottom:0.5rem;}
+footer.site p:last-child{margin-bottom:0;}
 
 /* Quote block */
 blockquote{

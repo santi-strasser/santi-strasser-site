@@ -4,6 +4,26 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Contact – The Resilience Architect</title>
+<meta name="description" content="Get in touch with Santi Strasser about speaking, mentoring, facilitation, or working together.">
+<link rel="canonical" href="https://santistrasser.com/contact/">
+<meta name="theme-color" content="#FAF6EF">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta property="og:site_name" content="The Resilience Architect">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Contact – The Resilience Architect">
+<meta property="og:description" content="Get in touch with Santi Strasser about speaking, mentoring, facilitation, or working together.">
+<meta property="og:url" content="https://santistrasser.com/contact/">
+<meta property="og:image" content="https://santistrasser.com/assets/images/og-share.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Contact – The Resilience Architect">
+<meta name="twitter:description" content="Get in touch with Santi Strasser about speaking, mentoring, facilitation, or working together.">
+<meta name="twitter:image" content="https://santistrasser.com/assets/images/og-share.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
@@ -11,10 +31,11 @@
 <script src="/assets/form.js" defer></script>
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to content</a>
 <header class="site">
   <div class="wrap">
     <a class="brand" href="/">The Resilience Architect</a>
-    <nav class="site-nav">
+    <nav class="site-nav" aria-label="Main">
       <a href="/">Home</a>
       <a href="/resilience/">Why Resilience?</a>
       <a href="/blog/">Blog</a>
@@ -25,11 +46,11 @@
   </div>
 </header>
 
-<main>
+<main id="main">
   <div class="wrap">
     <h1>Contact Me</h1>
     <p class="lede">Use the form below or contact me directly at:</p>
-    <p>s a n t i . s t r a s s e r @ g m a i l . c o m<br>+ 1  6 1 2 - 3 0 8 - 9 5 6 7</p>
+    <p class="contact-lines"><a href="mailto:santi.strasser@gmail.com">santi.strasser@gmail.com</a><br><a href="tel:+16123089567">+1 612-308-9567</a></p>
 
     <form class="form-grid w3f-form" action="https://api.web3forms.com/submit" method="POST" style="margin-top:2rem;">
       <input type="hidden" name="access_key" value="ce5b6eca-7dd7-4cbc-a7a3-a1f1ad766218">
@@ -38,16 +59,16 @@
       <div class="form-row">
         <div>
           <label for="fname">First Name (required)</label>
-          <input id="fname" name="First Name" required>
+          <input id="fname" name="First Name" autocomplete="given-name" required>
         </div>
         <div>
           <label for="lname">Last Name (required)</label>
-          <input id="lname" name="Last Name" required>
+          <input id="lname" name="Last Name" autocomplete="family-name" required>
         </div>
       </div>
       <div>
         <label for="email">Email (required)</label>
-        <input id="email" name="email" type="email" required>
+        <input id="email" name="email" type="email" autocomplete="email" required>
       </div>
       <div>
         <label for="message">Message (required)</label>
@@ -62,6 +83,7 @@
 <footer class="site">
   <div class="wrap">
     <p>&copy; <span id="y"></span> Santi Strasser – The Resilience Architect</p>
+    <p><a href="https://santistrasser.substack.com/subscribe" rel="noopener">Subscribe on Substack</a></p>
   </div>
 </footer>
 <script>document.getElementById('y').textContent = new Date().getFullYear();</script>

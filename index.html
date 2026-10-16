@@ -5,17 +5,37 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>The Resilience Architect – Santi Strasser</title>
 <meta name="description" content="Santi Strasser, The Resilience Architect – helping individuals and teams build trust, purpose, and emotional endurance.">
+<link rel="canonical" href="https://santistrasser.com/">
+<meta name="theme-color" content="#FAF6EF">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta property="og:site_name" content="The Resilience Architect">
+<meta property="og:type" content="website">
+<meta property="og:title" content="The Resilience Architect – Santi Strasser">
+<meta property="og:description" content="Santi Strasser, The Resilience Architect – helping individuals and teams build trust, purpose, and emotional endurance.">
+<meta property="og:url" content="https://santistrasser.com/">
+<meta property="og:image" content="https://santistrasser.com/assets/images/og-share.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="The Resilience Architect – Santi Strasser">
+<meta name="twitter:description" content="Santi Strasser, The Resilience Architect – helping individuals and teams build trust, purpose, and emotional endurance.">
+<meta name="twitter:image" content="https://santistrasser.com/assets/images/og-share.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/assets/styles.css">
-<script src="/assets/form.js" defer></script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Person", "@id": "https://santistrasser.com/#santi", "name": "Santi Strasser", "alternateName": "Santiago Strasser", "jobTitle": "Resilience Architect", "url": "https://santistrasser.com/", "image": "https://santistrasser.com/assets/images/headshot-santi-05.webp", "description": "Santi Strasser is a Resilience Architect who helps individuals and teams build trust, purpose, and emotional endurance.", "sameAs": ["https://santistrasser.substack.com", "https://www.linkedin.com/in/santistrasser/"]}</script>
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to content</a>
 <header class="site">
   <div class="wrap">
     <a class="brand" href="/">The Resilience Architect</a>
-    <nav class="site-nav">
+    <nav class="site-nav" aria-label="Main">
       <a href="/" class="active">Home</a>
       <a href="/resilience/">Why Resilience?</a>
       <a href="/blog/">Blog</a>
@@ -26,10 +46,10 @@
   </div>
 </header>
 
-<main>
+<main id="main">
   <section class="hero">
     <div class="wrap">
-      <img class="hero-photo" src="/assets/images/headshot-santi-05.jpg" alt="Santi Strasser">
+      <img class="hero-photo" src="/assets/images/headshot-santi-05.webp" width="150" height="150" alt="Portrait of Santi Strasser smiling, wearing a white button-down shirt in front of a white brick wall">
       <h1>I exist to feel the world is a playground here and now – where you can belong, play and even heal with trust and resilience.</h1>
       <a class="btn" href="/about/">Learn more</a>
     </div>
@@ -40,41 +60,24 @@
   </section>
 
   <section class="wrap" style="padding-top:56px;">
-    <span class="eyebrow">Contact Me</span>
-    <h2 style="margin-top:0;">Interested in working together?</h2>
-    <p>Fill out some info and I will be in touch shortly. Can't wait to hear from you!</p>
-
-    <form class="form-grid w3f-form" action="https://api.web3forms.com/submit" method="POST">
-      <input type="hidden" name="access_key" value="ce5b6eca-7dd7-4cbc-a7a3-a1f1ad766218">
-      <input type="hidden" name="subject" value="New message from santistrasser.com – Home">
-      <input type="checkbox" name="botcheck" class="hp-field" tabindex="-1" autocomplete="off">
-      <div class="form-row">
-        <div>
-          <label for="fname">First Name (required)</label>
-          <input id="fname" name="First Name" required>
-        </div>
-        <div>
-          <label for="lname">Last Name (required)</label>
-          <input id="lname" name="Last Name" required>
-        </div>
-      </div>
-      <div>
-        <label for="email">Email (required)</label>
-        <input id="email" name="email" type="email" required>
-      </div>
-      <div>
-        <label for="message">Message (required)</label>
-        <textarea id="message" name="message" required></textarea>
-      </div>
-      <button class="submit" type="submit">Send</button>
-      <p class="form-status" role="status"></p>
-    </form>
+    <div class="cta-card">
+  <span class="eyebrow">Contact Me</span>
+  <h2>Interested in working together?</h2>
+  <p>Tell me a bit about what you're working on and I will be in touch shortly. Can't wait to hear from you!</p>
+  <a class="btn" href="/contact/">Get in touch</a>
+</div>
+    <div class="cta-card">
+  <h2>Follow along</h2>
+  <p>New essays on resilience, leadership, and purpose land on Substack first.</p>
+  <a class="btn" href="https://santistrasser.substack.com/subscribe" rel="noopener">Subscribe on Substack</a>
+</div>
   </section>
 </main>
 
 <footer class="site">
   <div class="wrap">
     <p>&copy; <span id="y"></span> Santi Strasser – The Resilience Architect</p>
+    <p><a href="https://santistrasser.substack.com/subscribe" rel="noopener">Subscribe on Substack</a></p>
   </div>
 </footer>
 <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
